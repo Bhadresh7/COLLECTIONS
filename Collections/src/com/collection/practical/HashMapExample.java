@@ -43,7 +43,7 @@ public class HashMapExample {
 		System.out.println("Map after replacing 'Banana' value: " + map);
 
 		// Removing an element
-		map.remove("Apple");
+		System.out.println(map.remove("Apple"));
 		System.out.println("Map after removing 'Apple': " + map);
 
 		// Clearing the map

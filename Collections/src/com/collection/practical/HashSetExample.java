@@ -13,6 +13,9 @@ public class HashSetExample {
 		set.add("Banana");
 		set.add("Cherry");
 		set.add("Date");
+		set.add("Apple");
+		
+		System.out.println(set);
 
 		// Checking size and contents
 		System.out.println("Set size: " + set.size());

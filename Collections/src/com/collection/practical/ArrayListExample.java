@@ -9,12 +9,13 @@ import java.util.List;
 public class ArrayListExample {
 	public static void main(String[] args) {
 
+
+
 		List<String> list=new ArrayList<>(); //creating a arraylist
 		list.add("Alexander");   //adding values 
 		list.add("Benjamin");
 		list.add("Noah");
 		list.add("Liam");
-		list.add("James");
 		list.add("James");
 		System.out.println(list);
 
@@ -22,8 +23,11 @@ public class ArrayListExample {
 
 		//using iterator interface
 
+		
+
 		System.out.println("**** USING ITERATOR INTERFACE *****");
 		Iterator<String> it=list.iterator();
+
 		while(it.hasNext()) //checks if the iterator has a value 
 		{
 			System.out.println(it.next()); // print the value and moves to next value
@@ -75,7 +79,10 @@ public class ArrayListExample {
 		System.out.println("Removed item: "+list.remove(0));
 
 		boolean remove=list.remove("James");
+		
 		System.out.println("Removed item available: "+remove);
+
+		System.out.println(list.contains("Alexander"));
 
 
 
@@ -85,8 +92,9 @@ public class ArrayListExample {
 		boolean present=list.contains("Liam");
 		System.out.println("Checks if the item is present in the list: "+present);
 
+		System.out.println(arr);
 
-		System.out.println(arr.indexOf(2));
+		System.out.println("This is indexOf method "+arr.indexOf(2));
 
 
 
@@ -104,14 +112,40 @@ public class ArrayListExample {
 		ls.add(4);
 		ls.add(1);
 		ls.add(3);
-		
-		
+
+
 		ls.clear();
-		System.out.println(ls);
+		System.out.println(ls);	
+
+
+
+
+
+		//ArrayList<String> myList= new ArrayList<String>();
+
+//		myList.add("String");
+		//		myList.add(20);
+		//		myList.add(2.44444);
+		//		myList.add(true);
+
+
+//		System.out.println(myList.getFirst().contains("r"));
+
+		//		System.out.println(myList);
+		//		
+		//		String value= (String) myList.getFirst();
+		//		System.out.println(value);
+
+
+
+
+
+
+
+
 
 
 
 
 	}
-
 }

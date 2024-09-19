@@ -40,12 +40,17 @@ public class LinkedHashMapExample {
 		LinkedHashMap<String, Integer> anotherMap = new LinkedHashMap<>();
 		anotherMap.put("Date", 4);
 		anotherMap.put("Elderberry", 5);
+		anotherMap.put("Fig",6);
 		map.putAll(anotherMap);
 		System.out.println("Map after putAll: " + map);
 
 		// Default methods
-		System.out.println("Value for 'Cherry' or default: " + map.getOrDefault("Cherry", 0));
-		map.putIfAbsent("Fig", 6);
+		
+		//returns the value of the map if the items does not have any 
+		System.out.println("Value for 'Cherry' or default: " + map.getOrDefault("Cherry", 5));
+		
+		//puts 6 because fig is present in the map if not 7 will be the output
+		map.putIfAbsent("Fig", 7);
 		System.out.println("Map after putIfAbsent 'Fig': " + map);
 
 		// Removing elements

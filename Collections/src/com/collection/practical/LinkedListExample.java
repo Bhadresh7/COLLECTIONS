@@ -7,9 +7,15 @@ import java.util.LinkedList;
 public class LinkedListExample {
 	public static void main(String[] args) {
 		Deque <String>deque=new LinkedList<>();
+		
+		LinkedList<Integer> linkedlist=new LinkedList<Integer>();
+		linkedlist.addLast(20);
+		linkedlist.addFirst(50);
 
+		System.out.println(linkedlist);
 
-		deque.addFirst("Second"); deque.addFirst("Third");
+		deque.addFirst("Second"); 
+		deque.addFirst("Third");
 
 
 		deque.addLast("Second to Last");
